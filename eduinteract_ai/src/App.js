@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
 
+// Import new components with public API placeholders/hooks
+import InteractiveModels from './InteractiveModels';
+import RealTimeData from './RealTimeData';
+import AIAssistantChat from './AIAssistantChat';
+
 /**
  * PUBLIC_INTERFACE
  * Main EduInteract AI container. Holds navigation and three primary feature sections.
@@ -30,7 +35,8 @@ function App() {
             <div className="section-desc">
               Visualize, experiment, and interact with educational simulations.
             </div>
-            <div className="section-placeholder">[Models UI Placeholder]</div>
+            {/* Replace placeholder with component for logical integration point */}
+            <InteractiveModels />
           </section>
 
           {/* Real-time Data Visualization Section */}
@@ -39,7 +45,7 @@ function App() {
             <div className="section-desc">
               See live updates, experiment with parameters, and analyze data.
             </div>
-            <div className="section-placeholder">[Visualization UI Placeholder]</div>
+            <RealTimeData />
           </section>
 
           {/* AI Assistant Chat Section */}
@@ -48,7 +54,7 @@ function App() {
             <div className="section-desc">
               Get answers and explanations from the EduInteract AI.
             </div>
-            <div className="section-placeholder">[Chat UI Placeholder]</div>
+            <AIAssistantChat />
           </section>
         </div>
       </main>
